@@ -1,13 +1,21 @@
 .hero{
     background-color: #1f2937;
     color: white;
+    padding-bottom: 80px;
 }
 
-.hero-content{
-   display: flex;
+.hero-group{
+  display: flex;
     flex-direction: column;    
     align-items: center;
     text-align: center;
+    gap: 24px;
+}
+.hero-content{
+  display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 16px;
     
 }
 .title{
@@ -24,13 +32,175 @@
   border: none;
   text-decoration: none;
   border-radius: 8px;
-  /* border: 1px solid red; */
   padding: 12px 32px;
 }
 
-.dog-img{
+.hero-img{
   object-fit: cover;
   display: block;
-  width: 100%;
+  width: 80%;
     height: 100%;
+    border-radius: 16px;
 }
+
+@media screen and (min-width:768px) {
+  .hero-group{
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-img{
+  object-fit: cover;
+  display: block;
+  width: 50%;
+    border-radius: 16px;
+}
+.hero-content{
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+}
+
+/* info */
+.info{
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.card-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  padding-top: 20px;
+}
+
+.small-img{
+  object-fit: cover;
+  display: block;
+  width: 176px;
+  height: 176px;
+  border-radius: 16px;
+}
+
+.card p{
+  border: 1px solid red;
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+.card-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+.card{
+  width: calc(50% - 50px);
+}
+
+}
+
+/* quote */
+.quote-section{
+  background-color: rgb(215, 198, 198);
+  padding: 96px 0px;
+}
+
+.quote-box{
+  max-width: 768px;
+    margin: 0 auto;
+}
+
+.quote{
+  font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    color: #a1aa9b;
+    line-height: 1.25;
+}
+
+.author{
+  /* display: flex;
+  justify-content: flex-end; */
+  font-style: italic;
+      text-align: right;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+/* bt-banner */
+.bt-banner{
+  background-color: rgb(255, 255, 255);
+  padding: 80px 0px;
+
+}
+
+.bt{
+  background-color: rgb(49, 219, 219);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 32px 24px;
+  row-gap: 20px;
+  
+}
+
+.bt-logo{
+  font-size: 24px;
+}
+
+.bt-button{
+  background-color: rgb(49, 219, 219);
+  color: white;
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100px;
+  margin: 0 auto;
+  display: block;      /* ✅ block 才能讓 margin auto 生效 */
+}
+
+@media screen and (min-width:768px) {
+  .bt{
+    display: flex;
+    flex-direction: row;
+  }
+  .bt-group{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+
+  .bt-logo{
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+/* footer */
+footer{
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+
